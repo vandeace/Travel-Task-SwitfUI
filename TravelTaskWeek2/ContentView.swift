@@ -24,7 +24,6 @@ struct ContentView: View {
                         .renderingMode(.original)
                         .font(.system(size: 25))
                         .foregroundColor(.white)
-                        .accentColor(.yellow)
                         .padding(15)
                         .background{
                             Circle()
@@ -41,7 +40,6 @@ struct ContentView: View {
                         .renderingMode(.original)
                         .font(.system(size: 25))
                         .foregroundColor(.white)
-                        .accentColor(.yellow)
                         .padding(15)
                         .background{
                             Circle()
