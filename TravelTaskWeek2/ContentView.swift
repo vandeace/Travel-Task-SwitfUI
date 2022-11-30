@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showAlert : Bool = false
+    @State private var isShowingSheet : Bool = false
+    
     var body: some View {
         ZStack {
             Image("go-to-beach")
@@ -20,15 +24,33 @@ struct ContentView: View {
                 }
             VStack {
                 HStack {
-                    Image(systemName: "cloud.sun.fill")
-                        .renderingMode(.original)
-                        .font(.system(size: 25))
-                        .foregroundColor(.white)
-                        .padding(15)
-                        .background{
+                    Button{
+                        showAlert = true
+                    } label: {
+                        Image(systemName: "cloud.sun.fill")
+                            .renderingMode(.original)
+                            .font(.system(size: 25))
+                            .foregroundColor(.white)
+                            .padding(15)
+                            
+                    }
+                    .background{
                             Circle()
                                 .opacity(0.2)
+                    }
+                    .alert(Text("Not yet available"), isPresented: $showAlert) {
+                        Button {
+                            
+                        } label: {
+                            Text("OK")
                         }
+                        
+
+                    } message: {
+                        Text("Currently on active development")
+                    }
+                    
+                    
                     Spacer()
                     
                     Text("Travel")
@@ -44,6 +66,13 @@ struct ContentView: View {
                         .background{
                             Circle()
                                 .opacity(0.2)
+                        }
+                        .onTapGesture {
+                            isShowingSheet.toggle()
+                        }
+                        .sheet(isPresented: $isShowingSheet) {
+                            SheetView()
+                                .presentationDetents([.medium, .large])
                         }
                     
                 }

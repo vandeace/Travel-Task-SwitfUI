@@ -11,6 +11,8 @@
 		DC182CFD292F51C2007D0878 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC182CFC292F51C2007D0878 /* ContentView.swift */; };
 		DC182CFF292F51C2007D0878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC182CFE292F51C2007D0878 /* Assets.xcassets */; };
 		DC182D02292F51C2007D0878 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC182D01292F51C2007D0878 /* Preview Assets.xcassets */; };
+		DCC9BBFC2934FCC5000EE01C /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC9BBFB2934FCC5000EE01C /* SheetView.swift */; };
+		DCDD7B6929379DA4009E7A16 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDD7B6829379DA4009E7A16 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		DC182CFC292F51C2007D0878 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC182CFE292F51C2007D0878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC182D01292F51C2007D0878 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCC9BBFB2934FCC5000EE01C /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		DCDD7B6829379DA4009E7A16 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		DC182CF9292F51C2007D0878 /* TravelTaskWeek2 */ = {
 			isa = PBXGroup;
 			children = (
+				DCDD7B6829379DA4009E7A16 /* WebView.swift */,
+				DCC9BBFB2934FCC5000EE01C /* SheetView.swift */,
 				DC182CFA292F51C2007D0878 /* TravelTaskWeek2App.swift */,
 				DC182CFC292F51C2007D0878 /* ContentView.swift */,
 				DC182CFE292F51C2007D0878 /* Assets.xcassets */,
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC182CFD292F51C2007D0878 /* ContentView.swift in Sources */,
+				DCDD7B6929379DA4009E7A16 /* WebView.swift in Sources */,
+				DCC9BBFC2934FCC5000EE01C /* SheetView.swift in Sources */,
 				DC182CFB292F51C2007D0878 /* TravelTaskWeek2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
